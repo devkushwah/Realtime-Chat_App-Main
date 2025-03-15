@@ -1,0 +1,13 @@
+[13 Mar, 2025 - 19:26:37:2637] [31merror[39m: [31mMongoDB connection error:  querySrv ETIMEOUT _mongodb._tcp.cluster0.8fkp40v.mongodb.net[39m
+[14 Mar, 2025 - 09:07:06:76] [31merror[39m: [31mEmail service failed silently. Make sure you have provided your MAILTRAP credentials in the .env file[39m
+[14 Mar, 2025 - 09:07:06:76] [31merror[39m: [31mError:  getaddrinfo ENOTFOUND __mailtrap_smtp_host__[39m
+[14 Mar, 2025 - 09:17:22:1722] [31merror[39m: [31mEmail service failed silently. Make sure you have provided your MAILTRAP credentials in the .env file[39m
+[14 Mar, 2025 - 09:17:22:1722] [31merror[39m: [31mError:  connect ETIMEDOUT 142.251.175.109:2525[39m
+[14 Mar, 2025 - 09:39:15:3915] [31merror[39m: [31mEmail service failed silently. Make sure you have provided your MAILTRAP credentials in the .env file[39m
+[14 Mar, 2025 - 09:39:15:3915] [31merror[39m: [31mError:  5C250000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:[39m
+[31m[39m
+[14 Mar, 2025 - 09:47:00:470] [31merror[39m: [31mEmail service failed silently. Make sure you have provided your MAILTRAP credentials in the .env file[39m
+[14 Mar, 2025 - 09:47:00:470] [31merror[39m: [31mError:  connect ETIMEDOUT 3.86.141.192:2525[39m
+[14 Mar, 2025 - 09:47:53:4753] [31merror[39m: [31mEmail service failed silently. Make sure you have provided your MAILTRAP credentials in the .env file[39m
+[14 Mar, 2025 - 09:47:53:4753] [31merror[39m: [31mError:  connect ETIMEDOUT 18.215.44.90:2525[39m
+[15 Mar, 2025 - 09:23:33:2333] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
