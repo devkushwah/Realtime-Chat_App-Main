@@ -2,6 +2,7 @@
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
 import Button from "../components/Button";
+import GoogleLoginButton from "../components/GoogleLoginButton";
 import Input from "../components/Input";
 import { useAuth } from "../context/AuthContext";
 
@@ -65,8 +66,19 @@ const Register = () => {
         >
           Register
         </Button>
+        
+        {/* Divider */}
+        <div className="flex items-center w-full my-2">
+          <div className="flex-grow border-t border-secondary"></div>
+          <span className="px-3 text-sm text-zinc-400">OR</span>
+          <div className="flex-grow border-t border-secondary"></div>
+        </div>
+        
+        {/* Google Login Button */}
+        <GoogleLoginButton />
+        
         {/* Login link */}
-        <small className="text-zinc-300">
+        <small className="text-zinc-300 mt-4">
           Already have an account?{" "}
           <a className="text-primary hover:underline" href="/login">
             Login

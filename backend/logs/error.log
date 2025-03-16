@@ -11,3 +11,17 @@
 [14 Mar, 2025 - 09:47:53:4753] [31merror[39m: [31mEmail service failed silently. Make sure you have provided your MAILTRAP credentials in the .env file[39m
 [14 Mar, 2025 - 09:47:53:4753] [31merror[39m: [31mError:  connect ETIMEDOUT 18.215.44.90:2525[39m
 [15 Mar, 2025 - 09:23:33:2333] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 10:53:33:5333] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 11:04:13:413] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 11:25:52:2552] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 11:35:50:3550] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 11:36:03:363] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 11:36:23:3623] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 12:10:13:1013] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 12:19:41:1941] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 13:13:00:130] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[15 Mar, 2025 - 13:13:09:139] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[16 Mar, 2025 - 19:04:06:46] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[16 Mar, 2025 - 19:06:43:643] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[16 Mar, 2025 - 19:23:38:2338] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[16 Mar, 2025 - 19:29:38:2938] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m

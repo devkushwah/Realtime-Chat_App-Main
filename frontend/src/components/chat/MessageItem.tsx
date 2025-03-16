@@ -114,6 +114,7 @@ const MessageItem: React.FC<{
                 )}
               >
                 {message.attachments?.map((file) => {
+                  console.log(file);
                   return (
                     <div
                       key={file._id}
@@ -138,7 +139,11 @@ const MessageItem: React.FC<{
                       <img
                         className="h-full w-full object-cover"
                         src={file.url}
-                        alt="msg_img"
+                        alt="message image"
+                        onError={(e) => {
+                          console.error("Image failed to load:", file.url);
+                          e.currentTarget.style.display = 'none';
+                        }}
                       />
                     </div>
                   );

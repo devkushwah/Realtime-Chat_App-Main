@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
         file.originalname.lastIndexOf(".")
       );
     }
-    const filenameWithoutExtension = file.originalname
+    const filenameWithoutExtension = file.originalname 
       .toLowerCase()
       .split(" ")
       .join("-")
