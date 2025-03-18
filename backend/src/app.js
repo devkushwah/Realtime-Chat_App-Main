@@ -7,6 +7,8 @@ import { initializeSocketIO } from "./socket/index.js";
 import chatRouter from "./routes/chat.routes.js";
 import messageRouter from "./routes/message.routes.js";
 import userRouter from "./routes/user.routes.js";
+import session from "express-session";
+import passport from "passport"; // Add this import
 
 dotenv.config(); //  Load `.env` variables
 
@@ -22,17 +24,20 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Session setup karna
-// app.use(session({
-//   secret: process.env.SESSION_SECRET,
-//   resave: false,
-//   saveUninitialized: false,
-//   cookie: { secure: false } 
-// }));
+// Session setup
+app.use(session({
+  secret: process.env.SESSION_SECRET || "your-fallback-secret",
+  resave: false,
+  saveUninitialized: false,
+  cookie: { 
+    secure: process.env.NODE_ENV === "production", // Only use secure in production
+    maxAge: 24 * 60 * 60 * 1000 // 1 day
+  } 
+}));
 
-// Passport ko initialize karna
-// app.use(passport.initialize());
-// app.use(passport.session());
+// Passport initialization
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Add or check this line in your Express server setup
 app.use('/images', express.static('public/images'));

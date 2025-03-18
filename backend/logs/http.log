@@ -276,3 +276,27 @@
 [34m☘️  MongoDB Connected! Db host: cluster0-shard-00-00.hjw8j.mongodb.net[39m
 [34m[39m
 [16 Mar, 2025 - 19:29:38:2938] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[17 Mar, 2025 - 20:49:24:4924] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-02.hjw8j.mongodb.net[39m
+[34m[39m
+[17 Mar, 2025 - 20:51:56:5156] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-02.hjw8j.mongodb.net[39m
+[34m[39m
+[17 Mar, 2025 - 20:51:56:5156] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[17 Mar, 2025 - 20:56:21:5621] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-01.hjw8j.mongodb.net[39m
+[34m[39m
+[17 Mar, 2025 - 20:56:21:5621] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[17 Mar, 2025 - 20:57:52:5752] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-01.hjw8j.mongodb.net[39m
+[34m[39m
+[17 Mar, 2025 - 20:57:52:5752] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[17 Mar, 2025 - 20:58:07:587] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-00.hjw8j.mongodb.net[39m
+[34m[39m
+[17 Mar, 2025 - 20:58:07:587] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[17 Mar, 2025 - 21:28:37:2837] [31merror[39m: [31mMongoDB connection error:  querySrv ECONNREFUSED _mongodb._tcp.cluster0.hjw8j.mongodb.net[39m
+[17 Mar, 2025 - 21:41:58:4158] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-00.hjw8j.mongodb.net[39m
+[34m[39m
+[17 Mar, 2025 - 21:41:58:4158] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
