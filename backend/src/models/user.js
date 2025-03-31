@@ -75,7 +75,9 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
+// Hash the password before saving the user model to the database (middleware) 
 userSchema.pre("save", async function (next) {
+  // Check if the password has been modified to avoid rehashing it on every save operation 
   if (!this.isModified("password")) return next();
   this.password = await bcrypt.hash(this.password, 10);
   next();

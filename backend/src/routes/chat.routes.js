@@ -26,7 +26,7 @@ router.use(verifyJWT);
 
 router.route("/").get(getAllChats);
 
-router.route("/users").get(searchAvailableUsers);
+router.route("/users").get(searchAvailableUsers); 
 
 router
   .route("/c/:receiverId")
@@ -63,12 +63,12 @@ router
     mongoIdPathVariableValidator("chatId"),
     mongoIdPathVariableValidator("participantId"),
     validate,
-    removeParticipantFromGroupChat
+    removeParticipantFromGroupChat 
   );
 
 router
   .route("/leave/group/:chatId")
-  .delete(mongoIdPathVariableValidator("chatId"), validate, leaveGroupChat);
+  .delete(mongoIdPathVariableValidator("chatId"), validate, leaveGroupChat);  
 
 router
   .route("/remove/:chatId")

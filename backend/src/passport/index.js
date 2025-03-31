@@ -4,20 +4,6 @@ import { User } from "../models/user.js";
 import { UserLoginType, UserRolesEnum } from "../constants.js";
 import { ApiError } from "../utils/ApiError.js";
 import { Strategy as GitHubStrategy } from "passport-github2";
-import session from "express-session";
-import express from 'express'
-const app = express()
-
-app.use(
-  session({
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-    cookie: { secure: process.env.NODE_ENV === "production" }
-  })
-);
-app.use(passport.initialize());
-app.use(passport.session());
 
 try {
   passport.serializeUser((user, next) => {
@@ -103,7 +89,7 @@ try {
       async (_, __, profile, next) => {
         const user = await User.findOne({ email: profile._json.email });
         if (user) {
-          if (user.loginType !== UserLoginType.GITHUB) {
+          if (user.loginType !== UserLoginType.GITHUB) { 
             // TODO: We can redirect user to appropriate frontend urls which will show users what went wrong instead of sending response from the backend
             next(
               new ApiError(

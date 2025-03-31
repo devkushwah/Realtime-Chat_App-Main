@@ -99,12 +99,28 @@ router.route("/github").get(
   }
 );
 
-router
-  .route("/google/callback")
-  .get(passport.authenticate("google"), handleSocialLogin);
+router.get(
+  "/google/callback",
+  passport.authenticate("google", { 
+    failureRedirect: "/login",
+    session: true
+  }),
+  (req, res) => {
+    // Successful authentication, redirect to client app
+    res.redirect(process.env.CLIENT_SSO_REDIRECT_URL || "http://localhost:5173/chat");
+  }
+);
 
-router
-  .route("/github/callback")
-  .get(passport.authenticate("github"), handleSocialLogin);
+router.get(
+  "/github/callback",
+  passport.authenticate("github", { 
+    failureRedirect: "/login",
+    session: true
+  }),
+  (req, res) => {
+    // Successful authentication, redirect to client app
+    res.redirect(process.env.CLIENT_SSO_REDIRECT_URL || "http://localhost:5173/chat");
+  }
+);
 
 export default router;

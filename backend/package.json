@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.3.1",
-  "description": "A API learning go",
+  "description": "Realtime Chat Application with Node.js, Express, Socket.io, and MongoDB",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
@@ -11,24 +11,11 @@
     "start:test-server": "node -r dotenv/config --experimental-json-modules e2e/test-server.js",
     "test:playwright": "set NODE_OPTIONS=--experimental-vm-modules -r dotenv/config --experimental-json-modules && npx playwright test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hiteshchoudhary/apihub.git"
-  },
-  "keywords": [
-    "apihub",
-    "freeapi",
-    "open source",
-    "api as a service",
-    "public apis",
-    "kitchen sink"
-  ],
-  "author": "Hitesh Choudhary",
+ 
+ 
+  "author": "Dev Kushwah",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hiteshchoudhary/apihub/issues"
-  },
-  "homepage": "https://github.com/hiteshchoudhary/apihub#readme",
+
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
     "bcrypt": "^5.1.0",

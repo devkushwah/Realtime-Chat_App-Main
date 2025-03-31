@@ -300,3 +300,54 @@
 [34m☘️  MongoDB Connected! Db host: cluster0-shard-00-00.hjw8j.mongodb.net[39m
 [34m[39m
 [17 Mar, 2025 - 21:41:58:4158] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[18 Mar, 2025 - 08:04:18:418] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-00.hjw8j.mongodb.net[39m
+[34m[39m
+[18 Mar, 2025 - 08:04:18:418] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[18 Mar, 2025 - 20:36:13:3613] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-01.hjw8j.mongodb.net[39m
+[34m[39m
+[18 Mar, 2025 - 20:36:13:3613] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[18 Mar, 2025 - 20:40:58:4058] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-02.hjw8j.mongodb.net[39m
+[34m[39m
+[18 Mar, 2025 - 20:40:58:4058] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[18 Mar, 2025 - 20:45:26:4526] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-00.hjw8j.mongodb.net[39m
+[34m[39m
+[18 Mar, 2025 - 20:45:26:4526] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[18 Mar, 2025 - 20:47:23:4723] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-00.hjw8j.mongodb.net[39m
+[34m[39m
+[18 Mar, 2025 - 20:47:23:4723] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[18 Mar, 2025 - 20:49:33:4933] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-01.hjw8j.mongodb.net[39m
+[34m[39m
+[18 Mar, 2025 - 20:49:33:4933] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[18 Mar, 2025 - 20:49:54:4954] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-02.hjw8j.mongodb.net[39m
+[34m[39m
+[18 Mar, 2025 - 20:49:54:4954] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[18 Mar, 2025 - 20:58:01:581] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-02.hjw8j.mongodb.net[39m
+[34m[39m
+[18 Mar, 2025 - 20:58:01:581] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[18 Mar, 2025 - 21:42:57:4257] [31merror[39m: [31mMongoDB connection error:  querySrv ETIMEOUT _mongodb._tcp.cluster0.hjw8j.mongodb.net[39m
+[18 Mar, 2025 - 21:51:20:5120] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-01.hjw8j.mongodb.net[39m
+[34m[39m
+[18 Mar, 2025 - 21:51:20:5120] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[19 Mar, 2025 - 12:44:07:447] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-02.hjw8j.mongodb.net[39m
+[34m[39m
+[21 Mar, 2025 - 22:22:40:2240] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-00.hjw8j.mongodb.net[39m
+[34m[39m
+[21 Mar, 2025 - 22:22:40:2240] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[21 Mar, 2025 - 22:27:31:2731] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-02.hjw8j.mongodb.net[39m
+[34m[39m
+[21 Mar, 2025 - 22:27:31:2731] [31merror[39m: [31mMongo db connect error:  Listen method has been called more than once without closing.[39m
+[21 Mar, 2025 - 23:27:33:2733] [34minfo[39m: [34m[39m
+[34m☘️  MongoDB Connected! Db host: cluster0-shard-00-01.hjw8j.mongodb.net[39m
+[34m[39m

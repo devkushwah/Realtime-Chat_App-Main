@@ -8,9 +8,9 @@ const router = express.Router();
 import jwt from "jsonwebtoken";
 import { UserLoginType, UserRolesEnum } from "../constants.js"
 import { User } from "../models/user.js";
-import { ApiError } from "../utils/ApiError.js";
-import { ApiResponse } from "../utils/ApiResponse.js";
-import { asyncHandler } from "../utils/asyncHandler.js";
+import { ApiError } from "../utils/ApiError.js";    // learn
+import { ApiResponse } from "../utils/ApiResponse.js";    // learn
+import { asyncHandler } from "../utils/asyncHandler.js";   // learn
 import {
   getLocalPath,
   getStaticFilePath,
@@ -33,7 +33,9 @@ const generateAccessAndRefreshTokens = async (userId) => {
     user.refreshToken = refreshToken;
 
     await user.save({ validateBeforeSave: false });
+
     return { accessToken, refreshToken };
+    
   } catch (error) {
     throw new ApiError(
       500,

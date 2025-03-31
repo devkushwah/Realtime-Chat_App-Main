@@ -9,6 +9,7 @@ import messageRouter from "./routes/message.routes.js";
 import userRouter from "./routes/user.routes.js";
 import session from "express-session";
 import passport from "passport"; // Add this import
+import "./passport/index.js"; // Add this near the top with other imports
 
 dotenv.config(); //  Load `.env` variables
 
