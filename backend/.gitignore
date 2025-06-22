@@ -3,3 +3,13 @@ node_modules/
 error.log
 http.log
 info.log
+
+# Exclude screenshots
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Exclude additional logs
+*.log
+*.log.*
