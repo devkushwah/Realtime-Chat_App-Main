@@ -175,7 +175,7 @@ const loginUser = asyncHandler(async (req, res) => {
 });
 
 const logoutUser = asyncHandler(async (req, res) => {
-  await User.findByIdAndUpdate(
+  const updatedUser = await User.findByIdAndUpdate(
     req.user._id,
     {
       $set: {
@@ -184,6 +184,7 @@ const logoutUser = asyncHandler(async (req, res) => {
     },
     { new: true }
   );
+  console.log("Updated User:", updatedUser); // Debugging
 
   const options = {
     httpOnly: true,

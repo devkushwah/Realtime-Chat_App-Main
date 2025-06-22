@@ -1,6 +1,7 @@
 import { AvailableUserRoles } from "../constants.js";
 import { User } from "../models/user.js";
 import { ApiError } from "../utils/ApiError.js";
+import { ApiResponse } from "../utils/ApiResponse.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import jwt from "jsonwebtoken";
 
@@ -8,6 +9,8 @@ export const verifyJWT = asyncHandler(async (req, res, next) => {
   const token =
     req.cookies?.accessToken ||
     req.header("Authorization")?.replace("Bearer ", "");
+
+  console.log("Token received:", token); // Debugging
 
   if (!token) {
     throw new ApiError(401, "Unauthorized request");
@@ -19,15 +22,27 @@ export const verifyJWT = asyncHandler(async (req, res, next) => {
       "-password -refreshToken -emailVerificationToken -emailVerificationExpiry"
     );
     if (!user) {
-      // Client should make a request to /api/v1/users/refresh-token if they have refreshToken present in their cookie
-      // Then they will get a new access token which will allow them to refresh the access token without logging out the user
       throw new ApiError(401, "Invalid access token");
     }
     req.user = user;
     next();
   } catch (error) {
-    // Client should make a request to /api/v1/users/refresh-token if they have refreshToken present in their cookie
-    // Then they will get a new access token which will allow them to refresh the access token without logging out the user
+    if (error.name === "TokenExpiredError") {
+      console.error("JWT expired, logging out user"); // Debugging
+
+      const options = {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+      };
+
+      return res
+        .status(401)
+        .clearCookie("accessToken", options)
+        .clearCookie("refreshToken", options)
+        .json(new ApiResponse(401, {}, "Session expired. You have been logged out."));
+    }
+
+    console.error("JWT Verification Error:", error.message); // Debugging
     throw new ApiError(401, error?.message || "Invalid access token");
   }
 });
@@ -80,7 +95,36 @@ export const avoidInProduction = asyncHandler(async (req, res, next) => {
   } else {
     throw new ApiError(
       403,
-      "This service is only available in the local environment. For more details visit: https://github.com/hiteshchoudhary/apihub/#readme"
+      "Failed"
     );
   }
+});
+
+const logoutUser = asyncHandler(async (req, res) => {
+  console.log("User in logout:", req.user); // Debugging
+
+  if (!req.user) {
+    throw new ApiError(401, "Unauthorized");
+  }
+
+  await User.findByIdAndUpdate(
+    req.user._id,
+    {
+      $set: {
+        refreshToken: '',
+      },
+    },
+    { new: true }
+  );
+
+  const options = {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production" && req.secure, // Ensure secure only in production with HTTPS
+  };
+
+  return res
+    .status(200)
+    .clearCookie("accessToken", options)
+    .clearCookie("refreshToken", options)
+    .json(new ApiResponse(200, {}, "User logged out"));
 });
